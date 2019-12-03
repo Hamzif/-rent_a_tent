@@ -1,0 +1,32 @@
+<h1>SHOW Tents Page</h1>
+
+<!-- navbar component -->
+<!-- work with Ivana to get the image upload -->
+
+<div class="container">
+
+
+<!-- div -->
+  <!-- main card  -->
+    <!-- img flexbox -->
+      <!-- Tent image carousel -->
+    <!-- text flexbox -->
+      <!-- card info -->
+        <!-- address -->
+        <p><%= @tent.address %></p>
+        <!-- title -->
+        <h2><%= @tent.title%></h2>
+        <!-- description -->
+        <h3><%= @tent.description%></h3>
+    <!-- price flex -->
+    <h2 class="card-tent-pricing"><%= @tent.price %></h2>
+    <!-- avatar -->
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      <!-- user (tent owner) image  -->
+      <!-- first_name, last_name-->
+    <!-- btn-submit -->
+    <%= link_to "Book Now", "#", class: "btn btn-ghost" %>
+
+<!-- /div -->
+</div>
+
