@@ -1,0 +1,40 @@
+// /*THE TENT SHOW PAGE*/
+.card-tent {
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  padding: 8px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+  }
+}
+
+.card-tent-img{
+  height: 200px;
+  width: 100%;
+}
+
+#card-tent-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-tent-owner {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+}

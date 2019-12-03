@@ -1,32 +1,34 @@
 <h1>SHOW Tents Page</h1>
 
 <!-- navbar component -->
-<!-- work with Ivana to get the image upload -->
 
-<div class="container">
-
-
-<!-- div -->
-  <!-- main card  -->
-    <!-- img flexbox -->
-      <!-- Tent image carousel -->
-    <!-- text flexbox -->
-      <!-- card info -->
-        <!-- address -->
-        <p><%= @tent.address %></p>
-        <!-- title -->
-        <h2><%= @tent.title%></h2>
-        <!-- description -->
-        <h3><%= @tent.description%></h3>
-    <!-- price flex -->
-    <h2 class="card-tent-pricing"><%= @tent.price %></h2>
-    <!-- avatar -->
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+<div class="card-tent mb-3" style="max-width: 1000px;">
+  <div class="row no-gutters" id="card-tent">
+    <div class="col-md-4">
+      <%= cl_image_tag @tent.photo, crop: :fill, class: 'card-tent-img'%>
+    </div>
+    <div class="col-md-8" id="container-card-tent-infos">
+      <div class="card-body" id="card-tent-infos">
+        <p class="card-text"><small class="text-muted"><%= @tent.address %></small></p> <!-- address -->
+        <h2 class="card-title"><%= @tent.title%></h2> <!-- title -->
+        <p class="card-text"><%= @tent.description%></p> <!-- description -->
+      </div>
+    <div class="col-md-2">
+      <!-- price flex -->
+      <h2 class="card-tent-pricing">$<%= @tent.price %></h2>
+    </div>
+    <div>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-tent-owner avatar-bordered">
       <!-- user (tent owner) image  -->
       <!-- first_name, last_name-->
-    <!-- btn-submit -->
-    <%= link_to "Book Now", "#", class: "btn btn-ghost" %>
-
-<!-- /div -->
+      <!-- btn-submit -->
+    </div>
+    <div>
+      <%= link_to "Book Now", "#", class: "btn btn-ghost" %>
+      <p><%= link_to "See All Tents", tents_path %></p>
+    </div>
+    </div>
+  </div>
 </div>
+
 
