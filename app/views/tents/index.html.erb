@@ -1,18 +1,31 @@
-<h1>Index tents page</h1>
 <!-- navbar component -->
 <div class="container">
-
-<!-- div for the search by location -->
-<!-- form search by location -->
-
-<!-- div for our index -->
-<% @tents.each do |tent| %>
-  <%= tent.photo %>
-  <%= tent.address %>
-  <%= tent.title %>
-  <%= tent.price %>
-<% end %>
-<!-- </div> -->
-<!-- </div> -->
-
+  <!-- add the search by location bar -->
+  <div class="cards">
+    <% @tents.each do |tent| %>
+    <!-- add a link_to to show-->
+      <div class="card" style="width: 18rem;">
+        <%= cl_image_tag tent.photo, height: 250, width: 400, crop: :fill, class:"card-img-top" %>
+        <div class="card-body">
+          <p class="card-text"> <%= tent.address %></p>
+          <h5 class="card-title"><%= tent.title %></h5>
+          <div class="d-flex justify-content-between">
+            <div>
+              <% 5.times do %>
+                <i class="fas fa-star mr-0"></i>
+              <% end %>
+            </div>
+            <p class="card-text"> <%= tent.price %>/$</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+
+
+<!-- upload photo
+carrousel JS
+refarcto stars
+make card look nicer
+add search -->
