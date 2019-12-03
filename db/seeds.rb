@@ -16,5 +16,4 @@ require 'faker'
     description: Faker::Lorem.paragraph(sentence_count: 2)
   )
   tent.save!
-  end
 end

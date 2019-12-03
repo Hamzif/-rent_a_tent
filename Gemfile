@@ -14,7 +14,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-
+gem 'faker'
 gem 'devise'
 
 group :development do
