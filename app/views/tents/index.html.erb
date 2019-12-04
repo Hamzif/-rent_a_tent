@@ -1,5 +1,5 @@
 <!-- navbar component -->
-<div class="container-index-show">
+<div class="container-index">
   <div class="d-flex justify-content-end">
     <div class="form-inline pt-2 pb-2 mt-2 mb-2">
       <input type="text" class="form-control mr-sm-2" placeholder='1234 Main St'>
@@ -20,7 +20,10 @@
                   <i class="fas fa-star mr-0"></i>
                 <% end %>
               </div>
-              <p class="card-text"> <%= tent.price %>/$</p>
+              <div class= "d-flex align-items-baseline">
+                <p class="card-text font-weight-bold" style="font-size: 20px"> $<%= tent.price %></p>
+                <p>/day</p>
+              </div>
             </div>
           </div>
         </div>
