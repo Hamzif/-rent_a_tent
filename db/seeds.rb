@@ -21,6 +21,7 @@ User.destroy_all
   user.save!
 
   3.times do
+    url = "https://source.unsplash.com/random?tent"
     tent = Tent.new(
       user: user,
       address: Faker::Address.city,
@@ -28,7 +29,9 @@ User.destroy_all
       title: Faker::Commerce.product_name,
       description: Faker::Lorem.paragraph(sentence_count: 3)
     )
+    tent.remote_photo_url = url
     tent.save!
+    sleep(2)
   end
 end
 
