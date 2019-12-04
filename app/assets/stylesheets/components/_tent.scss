@@ -2,18 +2,20 @@
 .card-tent {
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 8px;
+  margin-top: 50px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 400px;
 
   h2 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
   }
   p {
-    font-size: 12px;
+    font-size: 14px;
     opacity: .7;
     margin: 0;
   }
@@ -24,17 +26,69 @@
   width: 100%;
 }
 
+.card-tent-pricing {
+  font-size: 24px;
+  right: 25px;
+  top: 0px;
+  width: 50px;
+  display: flex;
+}
+
+i {
+  font-size: 24px;
+}
+
 #card-tent-infos {
-  padding: 16px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: baseline;
   position: relative;
 }
 
 .card-tent-owner {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 15px;
+  top: 10px;
   width: 50px;
+}
+
+// BUTTONS
+#book {
+  display: flex;
+  position: relative;
+  right: -505px;
+  margin-bottom: 10px;
+  width: 20%;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+#return {
+  max-width: 10%;
+  margin-left: 220px;
+  border: 2px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover{
+      opacity: 0.8;
+    }
+
+  a {
+    text-decoration: none;
+    color: #4A4A4A;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    &:hover{
+      opacity: 1;
+    }
+  }
 }
