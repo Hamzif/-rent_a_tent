@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 .box {
   margin-left: 50px;
-  margin-top: 250px;
+  margin-top: 150px;
   height: 350px;
   border: 1px solid #000;
   background-color: #FFFFFF;
@@ -18,19 +18,22 @@ h1, h2, label {
   background-size: cover;
   background-position: center;
   padding: 0px 0;
+  height:calc(100vh - 100px);
 
 }
+
 .footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
   background: #F4F4F4;
   display: flex;
   align-items:  center;
   justify-content: space-between;
   height: 100px;
-  padding: 0px 50px;
   color: rgba(0,0,0,0.3);
   margin: 0px;
+  padding: 0 50px;
 
 }
 
@@ -53,15 +56,4 @@ h1, h2, label {
   color: #D23333;
 }
 
-.container {
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 50px; /* height of your footer */
-}
-
-#button{
-  margin-top: 20px;
-}
 
