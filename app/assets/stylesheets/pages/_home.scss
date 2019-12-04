@@ -1,8 +1,17 @@
 // Specific CSS for your home-page
 .box {
   margin-left: 50px;
-  margin-top: 100px;
+  margin-top: 250px;
+  height: 350px;
   border: 1px solid #000;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12)
+
+}
+h1, h2, label {
+  color: #484848;
+  margin-bottom: 20px;
 }
 
 .banner {
@@ -30,7 +39,7 @@
   align-items: center;
 }
 .footer-links a {
-  color: 4685c4;
+  color: #000000;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -49,5 +58,9 @@
  display: block;
  position: relative;
  padding-bottom: 50px; /* height of your footer */
+}
+
+#button{
+  margin-top: 20px;
 }
 
