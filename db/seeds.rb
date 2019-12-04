@@ -31,7 +31,7 @@ User.destroy_all
     )
     tent.remote_photo_url = url
     tent.save!
-    sleep(2)
+    sleep(3)
   end
 end
 
