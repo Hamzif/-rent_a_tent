@@ -1,5 +1,23 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 100px;
+}
+
+.cards {
+  a {
+  text-decoration: none;
+  opacity: 1;
+  color:black;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+
+}
+
+.card {
+border:none;
+border-radius: 4px
 }
