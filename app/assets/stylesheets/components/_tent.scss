@@ -2,13 +2,15 @@
 .card-tent {
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 8px;
+  margin-top: 50px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
   h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
   }
@@ -24,17 +26,45 @@
   width: 100%;
 }
 
+.card-tent-pricing {
+  font-size: 24px;
+  right: 20px;
+  top: 0px;
+  width: 50px;
+  display: flex;
+}
+
 #card-tent-infos {
-  padding: 16px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: baseline;
   position: relative;
+}
+
+#book {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  text-align: center;
+  margin-left: 16px;
+  flex-direction: column;
+  padding-right: 16px;
+  color: white;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+#return {
+  max-width: 100%;
+  margin-left: 220px;
 }
 
 .card-tent-owner {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
   width: 50px;
 }
