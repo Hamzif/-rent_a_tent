@@ -1,4 +1,5 @@
 class TentsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:home, :index, :show]
   def index
     # Display ALL Tents on index page
     @tents = Tent.all
