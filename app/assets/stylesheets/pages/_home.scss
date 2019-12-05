@@ -18,7 +18,7 @@ h1, h2, label {
   background-size: cover;
   background-position: center;
   padding: 0px 0;
-  height:calc(100vh - 100px);
+  height:calc(100vh - 60px);
 }
 
 .footer {
@@ -28,9 +28,8 @@ h1, h2, label {
   display: flex;
   align-items:  center;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   color: rgba(0,0,0,0.3);
-  // margin-top: 80px;
   padding: 0 50px;
 }
 

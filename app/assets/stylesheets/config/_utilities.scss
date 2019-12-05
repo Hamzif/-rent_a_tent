@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-
+html,
+body {
+ height: 100%;
+ position: relative;
+}
 a {
   color: black !important;
 }
@@ -10,4 +14,14 @@ a {
   margin-top: 80px;
   display: flex;
 }
-
+.container-show {
+  min-height: calc(100vh - 140px);
+}
+.main-container {
+  min-height: calc(100vh - 140px);
+  padding-bottom: 80px;
+ /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+}
