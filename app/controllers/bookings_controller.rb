@@ -17,7 +17,13 @@ class BookingsController < ApplicationController
     end
   end
 
+  def show
+    # Show PDP Confirmation of single Tent using params :tent_id
+    @booking = Booking.find(params[:tent_id])
+  end
+
   def update
+
   end
 
   def delete
