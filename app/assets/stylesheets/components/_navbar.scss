@@ -2,7 +2,7 @@
   justify-content: space-between;
   background: white;
   position:relative;
-  height: 50px;
+  height: 60px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,9 +13,18 @@
   width: 40px;
   position:absolute;
   right:50%;
-  top:5px;
+  top:10px;
 }
 
 .fa-campground:before {
   font-size: 30px;
 }
+
+.navbar-lewagon .navbar-search {
+  margin-left: 20px;
+  color-background: red;
+}
+
+// .form-search{
+//   width: 350px !important;
+// }
