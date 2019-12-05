@@ -2,8 +2,8 @@ class TentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :index, :show]
   def index
     # Display ALL Tents on index page
-    @tents = Tent.all
     @tents = Tent.geocoded # returns flats with coordinates
+    @tents = Tent.all
 
     @markers = @tents.map do |tent|
       {
