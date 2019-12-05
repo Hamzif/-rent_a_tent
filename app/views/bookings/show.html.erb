@@ -1,4 +1,4 @@
-
+<h1>Your booking</h1>
 <!-- navbar component -->
 <div class="card-tent mb-3 shadow" style="max-width: 1000px;">
   <div class="row no-gutters align-items-center">
@@ -36,12 +36,8 @@
         </div>
 
         <div class="btn-book">
-          <%= link_to "Book Now", booking_path(bookings.tent), class: "btn btn-flat" %>
-          <!-- FORM: new booking -->
-          <%= simple_form_for @booking do |f| %>
-           <%= f.input :start_date, as: :date %>
-           <%= f.input :end_date, as: :date %>
-          <% end %>
+          <%= link_to "Book Now", "#", class: "btn btn-flat" %>
+          <!-- pendding -->
         </div>
       </div>
     </div>
