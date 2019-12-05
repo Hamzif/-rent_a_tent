@@ -14,7 +14,7 @@ User.destroy_all
     email: Faker::Internet.email(domain: 'example'),
     first_name: Faker::Internet.username,
     last_name: Faker::Internet.username,
-    password: Faker::Internet.password,
+    password: "123456",
     description: Faker::Lorem.sentence(word_count: 10),
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
@@ -32,7 +32,11 @@ User.destroy_all
     tent.remote_photo_url = url
     tent.save!
     sleep(3)
+    Booking.create(user: user, tent: tent, start_date: Date.new, end_date: DateTime.new(2020, 2, 22))
   end
 end
 
 puts "finish seeding"
+
+
+
