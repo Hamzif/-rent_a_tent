@@ -1,11 +1,5 @@
 <!-- navbar component -->
 <div class="container-index">
-  <div class="d-flex justify-content-end">
-    <div class="form-inline pt-2 pb-2 mt-2 mb-2">
-      <input type="text" class="form-control mr-sm-2" placeholder='1234 Main St'>
-      <button type="submit" class="btn btn-success ">Search</button>
-    </div>
-  </div>
   <div class="cards">
     <% @tents.each do |tent| %>
       <%= link_to tent_path(tent) do %>
@@ -13,7 +7,7 @@
           <%= cl_image_tag tent.photo, height: 250, width: 400, crop: :fill, class:"card-img-top" %>
           <div class="card-body">
             <p class="card-text"> <%= tent.address %></p>
-            <h5 class="card-title"><%= tent.title %></h5>
+            <h5 class="card-title" style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><%= tent.title %></h5>
             <div class="d-flex justify-content-between">
               <div>
                 <% 5.times do %>
