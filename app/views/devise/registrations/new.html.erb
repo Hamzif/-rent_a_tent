@@ -28,6 +28,9 @@
             <%= f.input :password_confirmation,
                         required: true,
                         input_html: { autocomplete: "new-password" } %>
+
+            <%= f.input :avatar, required: true %>
+            <%= f.input :avatar_cache, as: :hidden %>
           </div>
 
             <%= f.button :submit, "Sign up", class:"btn btn-primary w-100" %>
