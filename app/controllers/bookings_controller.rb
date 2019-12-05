@@ -10,7 +10,6 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @tent = Tent.find(params[:tent_id])
     @booking.tent = @tent
-
     if @booking.save
       redirect_to booking_path(@booking)
     else

@@ -35,14 +35,14 @@
             <h3 class="card-tent-pricing">$<%= @tent.price %></h3>
         </div>
 
-        <div class="btn-book">
-          <%= link_to "Book Now", booking_path(bookings.tent), class: "btn btn-flat" %>
+
           <!-- FORM: new booking -->
-          <%= simple_form_for @booking do |f| %>
-           <%= f.input :start_date, as: :date %>
-           <%= f.input :end_date, as: :date %>
+          <%= simple_form_for ([@tent, @booking]) do |f| %>
+           <%= f.input :start_date %>
+           <%= f.input :end_date %>
+           <%= f.submit class: 'btn btn-primary'%>
           <% end %>
-        </div>
+
       </div>
     </div>
   </div>
