@@ -1,16 +1,12 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 puts "start seeding"
 Tent.destroy_all
 User.destroy_all
+
 5.times do
-  user = User.new(
+  owner = User.create!(
     email: Faker::Internet.email(domain: 'example'),
     first_name: Faker::Internet.username,
     last_name: Faker::Internet.username,
@@ -18,25 +14,36 @@ User.destroy_all
     description: Faker::Lorem.sentence(word_count: 10),
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
-  user.save!
 
-  3.times do
-    url = "https://source.unsplash.com/random?tent"
-    tent = Tent.new(
-      user: user,
-      address: Faker::Address.city,
-      price: Faker::Commerce.price(range: 10.0..70.0).round,
-      title: Faker::Commerce.product_name,
-      description: Faker::Lorem.paragraph(sentence_count: 3)
-    )
-    tent.remote_photo_url = url
-    tent.save!
-    sleep(3)
-    Booking.create(user: user, tent: tent, start_date: Date.new, end_date: DateTime.new(2020, 2, 22))
-  end
+  tent = Tent.create!(
+    user: owner,
+    address: Faker::Address.city,
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: Faker::Commerce.product_name,
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  booker = User.create!(
+    email: Faker::Internet.email(domain: 'example'),
+    first_name: Faker::Internet.username,
+    last_name: Faker::Internet.username,
+    password: "123456",
+    description: Faker::Lorem.sentence(word_count: 10),
+    avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
+  )
+
+  booking = Booking.create!(
+    user: booker,
+    # Access the Owner through the Tent
+    tent: tent,
+    start_date: Date.today,
+    end_date: Date.today + 1.week
+  )
+
+  puts "created one owner, tent, booker, booking"
+  sleep(3)
 end
 
 puts "finish seeding"
-
-
 
