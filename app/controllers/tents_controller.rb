@@ -8,6 +8,7 @@ class TentsController < ApplicationController
   def show
     # Show PDP of single Tent using params :id
     @tent = Tent.find(params[:id])
+    @booking = Booking.new
   end
 
   def new
