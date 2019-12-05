@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'faker'
 gem 'devise'
+gem 'geocoder'
 
 gem 'cloudinary', '~> 1.9.1'
 
