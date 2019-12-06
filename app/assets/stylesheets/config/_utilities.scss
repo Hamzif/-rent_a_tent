@@ -18,6 +18,11 @@ a {
 .container-show {
   min-height: calc(100vh - 140px);
 }
+
+#container-show-fix {
+  margin-bottom: 80px;
+}
+
 .main-container {
   min-height: calc(100vh - 140px);
   padding-bottom: 80px;
