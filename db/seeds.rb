@@ -16,9 +16,28 @@ User.destroy_all
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
 
-  tent = Tent.create!(
+  tent3 = Tent.create!(
     user: owner,
-    address: Faker::Address.city,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: Faker::Commerce.product_name,
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent1 = Tent.create!(
+    user: owner,
+    address: 'Sevilla',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: Faker::Commerce.product_name,
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+
+  tent2 = Tent.create!(
+    user: owner,
+    address: 'Madrid',
     price: Faker::Commerce.price(range: 10.0..70.0).round,
     title: Faker::Commerce.product_name,
     description: Faker::Lorem.paragraph(sentence_count: 3),
@@ -34,10 +53,12 @@ User.destroy_all
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
 
+  tent = [tent1, tent2, tent3]
+
   booking = Booking.create!(
     user: booker,
     # Access the Owner through the Tent
-    tent: tent,
+    tent: tent.sample,
     start_date: Date.today,
     end_date: Date.today + 1.week
   )
