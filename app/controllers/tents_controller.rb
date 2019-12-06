@@ -25,6 +25,12 @@ class TentsController < ApplicationController
     # Show PDP of single Tent using params :id
     @tent = Tent.find(params[:id])
     @booking = Booking.new
+
+    @marker =
+      [{
+        lat: @tent.latitude,
+        lng: @tent.longitude
+      }]
   end
 
   def new
