@@ -1,13 +1,13 @@
 <div class="container container-show">
 
-  <div class="row mt-5">
-    <%= link_to "See All Tents", tents_path %>
+  <div class="row my-4">
+    <%= link_to "See All Tents", tents_path, class:"btn btn-search-mainpage" %>
   </div>
   <!-- navbar component -->
 <div class="row">
-  <div class="card-tent mb-3 shadow overlay" style="max-width: 1000px;">
+  <div class="card-tent mb-3 shadow overlay" style="max-width: 100%;">
     <div class="row no-gutters ">
-      <div class="col-md-4">
+      <div class="h-100 col-md-4">
         <%= cl_image_tag @tent.photo, crop: :fill, class: 'card-tent-img'%>
       </div>
 
@@ -22,7 +22,7 @@
           </div>
 
           <div>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-tent-owner avatar-bordered">
+            <img src="https://kitt.lewagon.com/placeholder/users/hamzif" class="card-tent-owner avatar-bordered">
           </div>
 
 
