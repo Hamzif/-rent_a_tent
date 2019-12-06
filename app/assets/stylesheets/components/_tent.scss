@@ -4,10 +4,8 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 8px;
-  margin-top: 50px;
+  margin-top: 40px;
   background: white;
-  height: 350px;
 
   h2 {
     font-size: 24px;
@@ -17,12 +15,12 @@
   p {
     font-size: 14px;
     opacity: .7;
-    margin: 0;
+    margin: 0px;
   }
 }
 
 .card-tent-img{
-  height: 200px;
+  height: 100%;
   width: 100%;
 }
 
@@ -30,7 +28,7 @@
   font-size: 24px;
   right: 25px;
   top: 0px;
-  width: 50px;
+  width: 100px;
   display: flex;
 }
 
@@ -52,4 +50,12 @@ i {
   right: 15px;
   top: 10px;
   width: 50px;
+}
+
+#date-form {
+  padding: 16px;
+  display: inline-block;
+  h4{
+    font-size: 12px;
+  }
 }
