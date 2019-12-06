@@ -3,15 +3,20 @@
   margin-left: 50px;
   margin-top: 150px;
   height: 350px;
-  border: 1px solid #000;
   background-color: #FFFFFF;
+  opacity: 1.0;
   border-radius: 4px;
   box-shadow: 0 16px 40px rgba(0,0,0,0.12)
 
 }
+
 h1, h2, label {
-  color: #484848;
+  color: #364845;
   margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 .banner {
@@ -32,7 +37,6 @@ h1, h2, label {
   color: rgba(0,0,0,0.3);
   padding: 0 50px;
 }
-
 
 .footer-links {
   display: flex;
