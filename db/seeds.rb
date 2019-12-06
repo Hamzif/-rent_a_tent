@@ -6,7 +6,7 @@ Booking.destroy_all
 Tent.destroy_all
 User.destroy_all
 
-5.times do
+
   owner = User.create!(
     email: Faker::Internet.email(domain: 'example'),
     first_name: Faker::Internet.username,
@@ -20,7 +20,7 @@ User.destroy_all
     user: owner,
     address: 'Barcelona',
     price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: Faker::Commerce.product_name,
+    title: 'NEMO Hornet 2 Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -29,7 +29,7 @@ User.destroy_all
     user: owner,
     address: 'Sevilla',
     price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: Faker::Commerce.product_name,
+    title: 'Caddis Rapid 6 Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -39,7 +39,63 @@ User.destroy_all
     user: owner,
     address: 'Madrid',
     price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'Kelty Discovery 2-Person Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+    tent4 = Tent.create!(
+    user: owner,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'ALPS Mountaineering',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent5 = Tent.create!(
+    user: owner,
+    address: 'Sevilla',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
     title: Faker::Commerce.product_name,
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+
+  tent6 = Tent.create!(
+    user: owner,
+    address: 'Madrid',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'Camp Creek 2-Room Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+    tent7 = Tent.create!(
+    user: owner,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'Big Agnes Big House 4 Deluxe Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent8 = Tent.create!(
+    user: owner,
+    address: 'Sevilla',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'Kelty Discovery Dome 6 Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+
+  tent9 = Tent.create!(
+    user: owner,
+    address: 'Madrid',
+    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    title: 'Marmot Limestone 6P Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -53,7 +109,9 @@ User.destroy_all
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
 
-  tent = [tent1, tent2, tent3]
+  tent = [tent1, tent2, tent3, tent4, tent5, tent6, tent7, tent8, tent9]
+
+5.times do
 
   booking = Booking.create!(
     user: booker,
