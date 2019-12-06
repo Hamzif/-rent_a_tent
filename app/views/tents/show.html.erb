@@ -33,14 +33,10 @@
             </div>
             <h3 class="card-tent-pricing">$<%= @tent.price %><p><small>/per day</small></p></h3>
           </div>
-          <!-- FORM: new booking -->
-        <div class="simple_form_for form-inline" id="date-form">
-          <h4><%= simple_form_for ([@tent, @booking]) do |f| %></h4>
-            <p><%= f.input :start_date %> <%= f.input :end_date %></p>
-            <%= f.submit class: 'btn btn-primary'%>
-          <% end %>
-         </div>
-        </div>
+ 
+          <!-- RENDER FORM: new booking -->
+        <%= render 'bookings/form', tent: @tent, booking: @booking %>
+
       </div>
     </div>
   </div>

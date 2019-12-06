@@ -1,0 +1,6 @@
+<!-- FORM: new booking -->
+<%= simple_form_for([ tent, booking ], remote: true) do |form| %>
+  <%= form.input :start_date %>
+  <%= form.input :end_date %>
+  <%= form.submit 'Book', class: 'btn btn-primary'%>
+<% end %>
