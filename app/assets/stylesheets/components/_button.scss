@@ -13,29 +13,66 @@
   transition: background 0.3s ease;
 }
 
-.btn-return {
-  max-width: 20%;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: 0px;
+.btn-search-mainpage {
+  // display: flex;
+  // position: relative;
+  // right: -505px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  height: 45px;
+  // width: 30%;
+  text-align: center;
+  // flex-direction: column;
+  color: black;
   border-radius: 4px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-  &:hover{
-      opacity: 0.8;
-    }
-
-  a {
-    text-decoration: none;
-    color: #4A4A4A;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-    &:hover{
-      opacity: 1;
-    }
-  }
+  // background: #021B3D; blue
+  background: #FDCA40;
+  // background: #FF9F1C; orange
+  // transition: background 0.3s ease;
 }
+
+.btn-search-ghost {
+  color: #FDCA40;
+  height: 38px;
+  border: 1px solid #FDCA40;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  // opacity: 0.6;
+  transition: opacity 0.3s ease;
+  //  &:hover{
+  //     opacity: 0.8;
+  // }
+ }
+
+
+
+
+
+// .btn-return {
+//   max-width: 20%;
+//   text-align: left;
+//   margin-top: 40px;
+//   margin-left: 0px;
+//   border-radius: 4px;
+//   font-weight: lighter;
+//   opacity: 0.6;
+//   transition: opacity 0.3s ease;
+//   &:hover{
+//       opacity: 0.8;
+//     }
+
+//   a {
+//     text-decoration: none;
+//     color: #4A4A4A;
+//     opacity: 0.6;
+//     transition: opacity 0.3s ease;
+//     &:hover{
+//       opacity: 1;
+//     }
+//   }
+// }
+
 
 
 // button for homepage search
@@ -61,8 +98,5 @@
 //   background: #1EDD88;
 // }
 
-// .btn-book-ghost {
-//   color: black;
-//   background: #1EFF88;
-// }
+
 
