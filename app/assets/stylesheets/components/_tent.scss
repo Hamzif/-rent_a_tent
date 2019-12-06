@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  margin-top: 50px;
   background: white;
 
   h2 {
@@ -23,13 +25,12 @@
   }
 }
 
-
-.card-tent-booking {
+#booking-card{
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   background: white;
   height: 350px;
 
@@ -51,6 +52,13 @@
 }
 
 .card-tent-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center center;
+}
+
+.card-tent-img-booking{
   height: 100%;
   width: 100%;
   object-fit: cover;
