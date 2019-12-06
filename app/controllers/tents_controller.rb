@@ -3,7 +3,15 @@ class TentsController < ApplicationController
   def index
     # Display ALL Tents on index page
     @tents = Tent.geocoded # returns flats with coordinates
-    @tents = Tent.all
+    if params[:query].present?
+      if Tent.where(address: params[:query]).empty?
+        @tents = Tent.all
+      else
+        @tents = Tent.where(address: params[:query])
+      end
+    else
+      @tents = Tent.all
+    end
 
     @markers = @tents.map do |tent|
       {
