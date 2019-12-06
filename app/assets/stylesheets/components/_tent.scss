@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 80px;
   background: white;
 
   h2 {
@@ -53,7 +52,9 @@
 
 .card-tent-img{
   height: 100%;
-  width: 112%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center center;
 }
 
 .card-tent-pricing {
