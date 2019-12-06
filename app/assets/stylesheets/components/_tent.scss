@@ -4,8 +4,30 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 80px;
   background: white;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+    opacity: .7;
+    margin: 0px;
+  }
+}
+
+
+.card-tent-booking {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: white;
+  height: 350px;
 
   h2 {
     font-size: 24px;
