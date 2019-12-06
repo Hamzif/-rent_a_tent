@@ -4,7 +4,7 @@
     <%= link_to "See All Tents", tents_path %>
   </div>
   <!-- navbar component -->
-<div class="row">  
+<div class="row">
   <div class="card-tent mb-3 shadow overlay" style="max-width: 1000px;">
     <div class="row no-gutters ">
       <div class="col-md-4">
@@ -29,7 +29,7 @@
           <div class="d-flex justify-content-between px-3">
             <div>
               <% 5.times do %>
-              <i class="fas fa-star mr-0"></i>
+              <i class="fas fa-star mr-0" style="color:#FDCA40;"></i>
               <% end %>
             </div>
             <h3 class="card-tent-pricing">$<%= @tent.price %><p><small>/per day</small></p></h3>
