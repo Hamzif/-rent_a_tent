@@ -1,14 +1,14 @@
 <div class="container container-show" id="container-show-fix">
 
-<div class="btn-return row mt">
+<div class="btn-return row mt-5">
   <%= link_to "See All Tents", tents_path %>
 </div>
 
 <div class="card-tent-booking mb-3 shadow" id="booking-card" style="max-width: 1000px;">
   <div class="row no-gutters align-items-center">
 
-    <div class="h 100 col-md-4">
-      <%= cl_image_tag @booking.tent.photo, crop: :fill, class: 'card-tent-img'%>
+    <div class="h-100 col-md-4">
+      <%= cl_image_tag @booking.tent.photo, class: 'card-tent-img-booking'%>
     </div>
 
 
