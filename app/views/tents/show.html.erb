@@ -35,13 +35,8 @@
             <h3 class="card-tent-pricing">$<%= @tent.price %></h3>
         </div>
 
-
-          <!-- FORM: new booking -->
-          <%= simple_form_for ([@tent, @booking]) do |f| %>
-           <%= f.input :start_date %>
-           <%= f.input :end_date %>
-           <%= f.submit class: 'btn btn-primary'%>
-          <% end %>
+          <!-- RENDER FORM: new booking -->
+        <%= render 'bookings/form', tent: @tent, booking: @booking %>
 
       </div>
     </div>
