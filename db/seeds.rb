@@ -16,30 +16,29 @@ User.destroy_all
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
 
-  tent3 = Tent.create!(
-    user: owner,
-    address: 'Barcelona',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'NEMO Hornet 2 Tent',
-    description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
-  )
-
   tent1 = Tent.create!(
     user: owner,
     address: 'Sevilla',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'Caddis Rapid 6 Tent',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Caddis Rapid 6-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
-
 
   tent2 = Tent.create!(
     user: owner,
     address: 'Madrid',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Kelty Discovery 2-Person Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent3 = Tent.create!(
+    user: owner,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'NEMO Hornet 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -47,8 +46,8 @@ User.destroy_all
     tent4 = Tent.create!(
     user: owner,
     address: 'Barcelona',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'ALPS Mountaineering',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'ALPS Mountaineering Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -56,17 +55,16 @@ User.destroy_all
   tent5 = Tent.create!(
     user: owner,
     address: 'Sevilla',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: Faker::Commerce.product_name,
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'The North Face Stormbreak 2-Person Tent'
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
 
-
   tent6 = Tent.create!(
     user: owner,
     address: 'Madrid',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Camp Creek 2-Room Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
@@ -75,8 +73,8 @@ User.destroy_all
     tent7 = Tent.create!(
     user: owner,
     address: 'Barcelona',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'Big Agnes Big House 4 Deluxe Tent',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Big Agnes 4-Person Deluxe Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
@@ -84,18 +82,35 @@ User.destroy_all
   tent8 = Tent.create!(
     user: owner,
     address: 'Sevilla',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'Kelty Discovery Dome 6 Tent',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Kelty Discovery Dome 6-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
 
-
   tent9 = Tent.create!(
     user: owner,
     address: 'Madrid',
-    price: Faker::Commerce.price(range: 10.0..70.0).round,
-    title: 'Marmot Limestone 6P Tent',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Marmot Limestone 6-Person Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent10 = Tent.create!(
+    user: owner,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Marmot Discovery 4-Person Tent',
+    description: Faker::Lorem.paragraph(sentence_count: 3),
+    remote_photo_url: "https://source.unsplash.com/random?tent"
+  )
+
+  tent11 = Tent.create!(
+    user: owner,
+    address: 'Barcelona',
+    price: Faker::Commerce.price(range: 10.0..50.0).round,
+    title: 'Patagonia Backpacking 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
     remote_photo_url: "https://source.unsplash.com/random?tent"
   )
