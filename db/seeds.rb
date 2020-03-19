@@ -20,9 +20,9 @@ User.destroy_all
     user: owner,
     address: 'Sevilla',
     price: Faker::Commerce.price(range: 10.0..50.0).round,
-    title: 'Caddis Rapid 6-Person Tent',
+    title: 'REI Half-Dome 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/128692"
   )
 
   tent2 = Tent.create!(
@@ -31,7 +31,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Kelty Discovery 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/129516"
   )
 
   tent3 = Tent.create!(
@@ -40,7 +40,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'NEMO Hornet 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/168403"
   )
 
     tent4 = Tent.create!(
@@ -49,7 +49,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'ALPS Mountaineering Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/141360"
   )
 
   tent5 = Tent.create!(
@@ -58,16 +58,16 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'The North Face Stormbreak 2-Person Tent'
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/110883"
   )
 
   tent6 = Tent.create!(
     user: owner,
     address: 'Madrid',
     price: Faker::Commerce.price(range: 10.0..50.0).round,
-    title: 'Camp Creek 2-Room Tent',
+    title: 'Camp Creek 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/141933"
   )
 
     tent7 = Tent.create!(
@@ -76,7 +76,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Big Agnes 4-Person Deluxe Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/895812"
   )
 
   tent8 = Tent.create!(
@@ -85,7 +85,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Kelty Discovery Dome 6-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/112236"
   )
 
   tent9 = Tent.create!(
@@ -94,7 +94,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Marmot Limestone 6-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/880483"
   )
 
   tent10 = Tent.create!(
@@ -103,7 +103,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Marmot Discovery 4-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/136057"
   )
 
   tent11 = Tent.create!(
@@ -112,7 +112,7 @@ User.destroy_all
     price: Faker::Commerce.price(range: 10.0..50.0).round,
     title: 'Patagonia Backpacking 2-Person Tent',
     description: Faker::Lorem.paragraph(sentence_count: 3),
-    remote_photo_url: "https://source.unsplash.com/random?tent"
+    remote_photo_url: "https://www.rei.com/media/product/164193"
   )
 
   booker = User.create!(
@@ -124,7 +124,7 @@ User.destroy_all
     avatar: Faker::LoremFlickr.image(size: "40x40", search_terms: ['face'])
   )
 
-  tent = [tent1, tent2, tent3, tent4, tent5, tent6, tent7, tent8, tent9]
+  tent = [tent1, tent2, tent3, tent4, tent5, tent6, tent7, tent8, tent9, tent10, tent11]
 
 5.times do
 
