@@ -56,7 +56,7 @@ User.destroy_all
     user: owner,
     address: 'Sevilla',
     price: Faker::Commerce.price(range: 10.0..50.0).round,
-    title: 'The North Face Stormbreak 2-Person Tent'
+    title: 'The North Face Stormbreak 2-Person Tent',
     description: "With large doors and 2 multi-configuration vestibules, The North Face Stormbreak 2 tent offers easy access and a great view of the great outdoors for 2 campers through 3 seasons.",
     remote_photo_url: "https://www.rei.com/media/product/110883"
   )
