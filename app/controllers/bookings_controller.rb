@@ -1,9 +1,4 @@
 class BookingsController < ApplicationController
-  # create a new booking
-  # def new
-  #   @booking = Booking.new
-  # end
-
   # create a new booking that has an user_id and a tent_id and display it on a show page
   def create
     @booking = Booking.new(booking_params)
