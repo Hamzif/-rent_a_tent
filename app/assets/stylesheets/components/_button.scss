@@ -56,58 +56,11 @@
   // }
  }
 
-
-
-
-
-// .btn-return {
-//   max-width: 20%;
-//   text-align: left;
-//   margin-top: 40px;
-//   margin-left: 0px;
-//   border-radius: 4px;
-//   font-weight: lighter;
-//   opacity: 0.6;
-//   transition: opacity 0.3s ease;
-//   &:hover{
-//       opacity: 0.8;
-//     }
-
-//   a {
-//     text-decoration: none;
-//     color: #4A4A4A;
-//     opacity: 0.6;
-//     transition: opacity 0.3s ease;
-//     &:hover{
-//       opacity: 1;
-//     }
-//   }
-// }
-
-
-
-// button for homepage search
-// button on login & sign-up
-// button on Create a Tent
-
-
-// EXAMPLE FOR SETTING PRIMARY FEATURES OF BTN THEN ADDING SPECIFICS
-// .btn-prim {
-//   display: flex;
-//   position: relative;
-//   right: -505px;
-//   margin-bottom: 10px;
-//   width: 20%;
-//   text-align: center;
-//   flex-direction: column;
-//   border-radius: 4px;
-//   transition: background 0.3s ease;
-// }
-
-// .btn-book {
-//   color: white;
-//   background: #1EDD88;
-// }
-
-
-
+.btn-primary {
+  background-color: $tent-yellow;
+  border-color:  $tent-yellow;
+  & :hover {
+    background-color: #f7b613;
+    border-color:  #f7b613;
+  }
+}
